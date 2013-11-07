@@ -16,7 +16,7 @@ Readonly::Array our @EXPORT_OK => qw(err_json);
 our $PRETTY = 0;
 
 # Version.
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 # JSON print of backtrace.
 sub err_json {
@@ -52,7 +52,7 @@ Error::Pure::Output::JSON - Output JSON subroutines for Error::Pure.
 
 =over 8
 
-=item B<err_json(@errors)>
+=item C<err_json(@errors)>
 
  JSON print of backtrace.
  When is set global variable $PRETTY, print pretty output.
@@ -64,7 +64,7 @@ Error::Pure::Output::JSON - Output JSON subroutines for Error::Pure.
 
 =over 8
 
-=item B<$PRETTY>
+=item C<$PRETTY>
 
  JSON pretty output flag. Possible values are 0 or 1.
  Default value is 0.
@@ -205,6 +205,6 @@ BSD license.
 
 =head1 VERSION
 
-0.04
+0.05
 
 =cut
