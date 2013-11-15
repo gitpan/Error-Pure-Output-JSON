@@ -27,7 +27,7 @@ no_index:
     - t
 requires:
   Exporter: 0
-  JSON: 0
+  JSON: 2.5
   Readonly: 0
   perl: 5.6.0
 resources:
@@ -35,4 +35,4 @@ resources:
   homepage: https://github.com/tupinek/Error-Pure-Output-JSON
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/tupinek/Error-Pure-Output-JSON
-version: 0.05
+version: 0.06

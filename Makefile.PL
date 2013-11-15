@@ -10,8 +10,9 @@ abstract 'Output JSON subroutines for Error::Pure.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Error-Pure-Output-JSON';
+readme_from 'JSON.pm';
 requires 'Exporter' => 0;
-requires 'JSON' => 0;
+requires 'JSON' => 2.50;
 requires 'Readonly' => 0;
 requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
@@ -25,7 +26,7 @@ test_requires 'Test::NoWarnings' => 0;
 test_requires 'Test::Pod' => 0;
 test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
-version '0.05';
+version '0.06';
 
 # Run.
 WriteAll();
