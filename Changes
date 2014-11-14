@@ -1,3 +1,7 @@
+0.08 2014-11-14T23:34:17+01:00
+ - Fix err_json() input arguments.
+ - Remove blank ERRORS section in doc.
+
 0.07 2014-10-01T13:04:33+02:00
  - Add tests.
  - Fix LICENSE file.

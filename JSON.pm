@@ -16,17 +16,17 @@ Readonly::Array our @EXPORT_OK => qw(err_json);
 our $PRETTY = 0;
 
 # Version.
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 # JSON print of backtrace.
 sub err_json {
-	my $struct_r = shift;
+	my @errors = @_;
 	my $ret_json;
 	my $json = JSON->new;
 	if ($PRETTY) {
-		$ret_json = $json->pretty->encode($struct_r);
+		$ret_json = $json->pretty->encode(@errors);
 	} else {
-		$ret_json = $json->encode($struct_r);
+		$ret_json = $json->encode(@errors);
 	}
 	return $ret_json;
 }
@@ -70,10 +70,6 @@ Error::Pure::Output::JSON - Output JSON subroutines for Error::Pure.
  Default value is 0.
 
 =back
-
-=head1 ERRORS
-
- None.
 
 =head1 EXAMPLE1
 
@@ -205,6 +201,6 @@ BSD license.
 
 =head1 VERSION
 
-0.07
+0.08
 
 =cut
